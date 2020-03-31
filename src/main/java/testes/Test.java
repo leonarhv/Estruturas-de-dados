@@ -5,6 +5,7 @@ import algoritmos.desafios.baralho.Baralho;
 import algoritmos.desafios.baralho.Carta;
 import algoritmos.shuffle.FisherYates;
 import algoritmos.sort.BubbleSort;
+import algoritmos.sort.SelectionSort;
 import java.util.Arrays;
 
 /*
@@ -30,7 +31,10 @@ public class Test {
 //        System.out.println(b.retiraCarta());
 
 
-        BubbleSort.sort(num);
+//        BubbleSort.sort(num);
+//        System.out.println(Arrays.toString(num));
+
+        SelectionSort.sort(num);
         System.out.println(Arrays.toString(num));
     }
     
