@@ -1,6 +1,8 @@
 package testes;
 
 
+import algoritmos.desafios.baralho.Baralho;
+import algoritmos.desafios.baralho.Carta;
 import algoritmos.shuffle.FisherYates;
 import java.util.Arrays;
 
@@ -17,9 +19,14 @@ import java.util.Arrays;
 public class Test {
     
     public static void main(String[] args) {
-        int[] num = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        
-        FisherYates.shuffle(num);
+//        int[] num = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//        
+//        FisherYates.shuffle(num);
+        Baralho b = new Baralho();
+        b.imprimeBaralho();
+        b.embaralha();
+        b.imprimeBaralho();
+        System.out.println(b.retiraCarta());
     }
     
 }

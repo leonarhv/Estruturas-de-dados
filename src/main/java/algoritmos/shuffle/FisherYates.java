@@ -5,7 +5,6 @@
  */
 package algoritmos.shuffle;
 
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -23,7 +22,6 @@ public class FisherYates {
             vet[i] = vet[j];
             vet[j] = aux;
         }
-        System.out.println(Arrays.toString(vet));
     }
     
 }
