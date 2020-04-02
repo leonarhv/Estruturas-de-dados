@@ -38,4 +38,33 @@ public class ShellSort {
         
         return true;
     }
+    
+    public static boolean sortString(String[] vet) {
+        
+        if(vet == null) return false;
+        
+        int h = 1;
+        int n = vet.length;
+        
+        while(h < n) {
+            h = h * 3 + 1;
+        }
+        
+        h = h / 3;       
+                
+        while (h > 0) {       
+            for (int i = h; i < n; i++) {
+                String aux = vet[i];
+                int j = i;
+                while (j >= h && vet[j - h].compareToIgnoreCase(aux) > 0) {                    
+                    vet[j] = vet[j - h];
+                    j = j - h;
+                }
+                vet[j] = aux;
+            }
+            h = h / 2;
+        }
+        
+        return true;
+    }
 }
